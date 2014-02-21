@@ -1,8 +1,7 @@
-
     
 <li> <p>
     <input type="word" placeholder="phrase">
-    Been a minute since we kicked it, you've been caught up </li> 
+    Been a minute since we kicked it, you've been caught up !</li> 
     <li> With them
     <input type="word" placeholder="noun">
         , I don't get it, you're a star 
