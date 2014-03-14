@@ -1,0 +1,114 @@
+
+<html>
+  <head>
+    <title>OurGame</title>
+      <style>
+        body {
+              background-color:#15ACED;
+              color: yellow;        }
+          
+    span {
+        color:red;
+    }
+      </style>
+  </head>
+  <body style="">
+<center><b><h1>Show Me </h1></b></center>
+  <form id="words" onsubmit="javascript:onSubmit()">
+ <center>
+     
+    <input type='text' placeholder="phrase" id="phrase">
+    <input type='text' placeholder="noun" id="noun2">
+    <input type='text' placeholder="verbs" id="verbs">
+    <input type='text' placeholder='adjective' id='adjective'>
+    <input type="submit">
+  </center> 
+  </form>
+      <div style="display:none" id="theDiv">    
+<div style="text-align:center;">
+      
+<center><b><h2>By Kid ink ft Chris Brown</h2></b></center>
+
+    <p>Baby let me put your panties to the side<br>
+I'm a make you feel alright<br>
+'Cause I'm a give you what you need, yeah<br>
+Mami you remind me of something<br></P>
+<P>I don't know what it is<br>
+You remind me of something<br>
+You gotta show me<br>
+Alright, you remind me of something   <text style="font-family:arial;color:yellow;font-size:20px;"><span id="phrase-spot"></span><br></b></text>
+I don't know what it is right now<br>
+You remind me of something<br>
+Girl you gotta show me<br></P>
+
+
+<P>Uh, on the real no lie<br>
+I don't know what it is but you just my type<br>
+Everything just right<br>
+B set put us to the left<br>
+Don't listen to the hype though<br>
+Got a cup in your hand<br></P>
+<P>Baby sitting but you ain't got no kids  <text style="font-family:arial;color:yellow;font-size:20px;"><b><span id="noun2-spot"></span><br></b></text>
+We ain't leaving 'til there ain't no more left<br>
+Can't see no time on the Rolex<br>
+I could tell you a freak, go and show it<br>
+Looking   <text style="font-family:arial;color:yellow;font-size:20px;"><b><span id="verbs-spot"></span></b></text>
+for the after party, where to go at?<br>
+Go on the floor like a doormat<br>
+Baby you know where to throw that<br>
+I said<br></P>
+
+
+<P>Mami you remind me of something<br>
+I don't know what it is<br>
+You remind me of something<br>
+You gotta show me   <text style="font-family:arial;color:yellow;font-size:20px;"><b><span id="adjective-spot"></span></b><br></text>
+Alright, you remind me of something<br>
+I don't know what it is right now<br>
+You remind me of something<br>
+Girl you gotta show me<br></P>
+
+
+
+    
+
+    </div>
+
+
+     </body>
+    <script>
+    
+    saveWords = function() {
+    console.log("test")
+    theDiv=document.getElementById("theDiv");
+    theDiv.style.display="block";
+    
+    p=document.getElementById("phrase");
+    console.log(p.value);
+        
+    p2=document.getElementById("noun2");
+    console.log(p2.value);    
+        
+    n1=document.getElementById("verbs");
+    console.log(n1.value);  
+        
+    to=document.getElementById("adjective");console.log(to.value);
+        
+    phrase_spot=document.getElementById("phrase-spot")
+    noun2_spot=document.getElementById("noun2-spot")
+    verbs_spot=document.getElementById("verbs-spot")
+    adjective_spot=document.getElementById("adjective-spot")
+    
+    
+    phrase_spot.innerHTML=phrase.value;
+    noun2_spot.innerHTML=noun2.value;
+    verbs_spot.innerHTML=verbs.value;
+    adjective_spot.innerHTML=adjective.value;
+    
+    };
+    onSubmit = function() {
+        event.preventDefault();
+        saveWords();
+    };
+    </script>
+    </html>
